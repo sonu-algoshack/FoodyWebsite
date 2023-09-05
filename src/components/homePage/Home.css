@@ -2,6 +2,10 @@
     background-color: black;
 }
 
+.pageWelcomeMsg, .pageWelcomeMsg, .pageWelcomeMsg{
+    color: white;
+}
+
 .displayNone {
     display: none;
 }

@@ -113,17 +113,17 @@ const Home = ({ setSignupCss, setHomeCss }) => {
         <div id="completeHomePage">
             <Header showHomePage={showHomePage} showLikePage={showLikePage} showFavouritePage={showFavouritePage} setHomeCss={setHomeCss} setSignupCss={setSignupCss} />
             <div id="homePage" className={homeClass}>
-                <div className="pageWelcomeMsg" >Hello welcome to home page</div>
+                <div className="pageWelcomeMsg" >Welcome to home page</div>
                 <div id="foodItems">{foods}</div>
             </div>
 
             <div id="favouritePage" className={favouriteClass}>
-                <div className="pageWelcomeMsg" >Hello welcome to Favourite Page</div>
+                <div className="pageWelcomeMsg" >Welcome to Favourite Page</div>
                 <div id="favouriteFood">{favouriteFoods}</div>
             </div>
 
             <div id="likePage" className={likeClass}>
-                <div className="pageWelcomeMsg" >Hello welcome to Like Page</div>
+                <div className="pageWelcomeMsg" >Welcome to Like Page</div>
                 <div id="likedFood">{likeFoods}</div>
             </div>
 
