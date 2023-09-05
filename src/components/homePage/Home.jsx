@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import './Home.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 
 import foodData from "../assets/foodDetails.json";
 import FoodItem from "./foodItem";
