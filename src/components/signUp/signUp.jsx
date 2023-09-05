@@ -44,7 +44,9 @@ const Emailing = ({ setHomeCss }) => {
   const rightOtpMsg = document.getElementById("rightOtp");
 
   // otp sender function
-  const sendOTP = () => {
+  const sendOTP = (e) => {
+    // e.innerText = ""
+    console.log(e)
 
     let emailbody = `
       <h1>Welcome,</h1> <br>
@@ -53,6 +55,8 @@ const Emailing = ({ setHomeCss }) => {
 
     const emailUnderSendOtpBtn = document.getElementById("emailUnderSendOtpBtn");
     const emailSended = document.getElementById("otpSendedMsg");
+    const sendOtpButton = document.getElementById("sendOtpButton");
+    
 
     if (sendEmailOrNot) {
       window.Email.send({
@@ -65,6 +69,7 @@ const Emailing = ({ setHomeCss }) => {
         Body: emailbody
       }).then(
         message => {
+          sendOtpButton.innerText = "Resend OTP"
           if (message === "OK") {
             emailSended.classList.remove("displayNone");
             emailUnderSendOtpBtn.classList.add("displayNone");
@@ -125,7 +130,7 @@ const Emailing = ({ setHomeCss }) => {
             <div className='error displayNone' id="wrongEmail">Invalid Email, Please Check And Try Again!</div>
           </div>
           <button onClick={sendOTP} data-aos="fade-left" className='button' id="sendOtpButton">Send OTP</button>
-          <div id='otpSendedMsg' className='displayNone'>OTP Sended On <span id='emailId'>{email}</span> Successfully!</div>
+          <div id='otpSendedMsg' className='displayNone'>OTP Sended Successfully! Check  <span id='emailId'>SPAM FOLDER OF {email}</span></div>
           <div id='emailUnderSendOtpBtn' className='displayNone'>Invalid Email, Please Check And Try Again!</div>
 
           <div id='otpInp' className='displayNone'>

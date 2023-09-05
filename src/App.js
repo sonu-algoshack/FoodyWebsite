@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Home from './components/homePage/Home';
-import Emailing from './components/emailPage/signUp';
+import Emailing from './components/signUp/signUp';
 
 function App() {
   const [homeCss, setHomeCss] = useState("displayNone");
