@@ -33,7 +33,7 @@
 }
 
 #textarea {
-    width: 600px;
+    width: 60%;
     margin: auto;
 }
 
@@ -41,4 +41,18 @@
     width: 200px;
     height: 30px;
     margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    #textarea {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #textarea {
+        width: 95%;
+        margin: auto;
+    }
 }

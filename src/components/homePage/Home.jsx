@@ -20,8 +20,7 @@ const Home = ({ setSignupCss, setHomeCss }) => {
         const index = likeFoodDetails.indexOf(removeData);
         const remove = [...likeFoodDetails];
         remove.splice(index, 1);
-        setLikeFoodDetails([...remove]);
-        console.log("removed");
+        setLikeFoodDetails(remove);
     }
 
 
@@ -33,81 +32,39 @@ const Home = ({ setSignupCss, setHomeCss }) => {
     const removeFavourite = (removeData) => {
         const index = favouriteFoodDetails.indexOf(removeData);
         const removed = [...favouriteFoodDetails];
-        removed.splice(index, 1);
-        setFavouriteFoodDetails([...removed]);
-        console.log(favouriteFoodDetails);
+        setFavouriteFoodDetails(removed.splice(index, 1));
+        console.log("hy");
     }
-
-    // comments 
-    const [comments, setComments] = useState([]);
-    const showComments = comments.map((everySingleComment) => {
-        return (
-            <div className="commentParent">
-                <div className="everySingleComment"> {everySingleComment} </div>
-            </div>
-        )
-    })
 
     // Complete Menu
     const foods = foodDetails.map((foodDetail) => {
         return (
             <FoodItem foodDetail={foodDetail} makeFavourite={makeFavourite} removeFavourite={removeFavourite} makeLike={makeLike} removeLike={removeLike} />
-        )
+            )
     })
     // Only Favourite Foods
     const favouriteFoods = favouriteFoodDetails.map((foodDetail) => {
         return (
-            <FoodItem foodDetail={foodDetail} makeFavourite={makeFavourite} removeFavourite={removeFavourite} makeLike={makeLike} removeLike={removeLike} />
-        )
+            <FoodItem foodDetail={foodDetail} makeFavourite={makeFavourite} removeFavourite={removeFavourite} />
+            )
     })
     // Only Liked Foods
     const likeFoods = likeFoodDetails.map((foodDetail) => {
         return (
-            <FoodItem foodDetail={foodDetail} makeFavourite={makeFavourite} removeFavourite={removeFavourite} makeLike={makeLike} removeLike={removeLike} />
-        )
+            <FoodItem foodDetail={foodDetail} makeLike={makeLike} removeLike={removeLike} />
+            )
     })
-
+    
+    const displayNone = "displayNone";
     const [homeClass, setHomeClass] = useState("");
     const [likeClass, setLikeClass] = useState("displayNone");
     const [favouriteClass, setFavouriteClass] = useState("displayNone");
-
-    const displayNone = "displayNone";
     // show home page function
-    const showHomePage = () => {
-        setHomeClass("")
-        setLikeClass(displayNone);
-        setFavouriteClass(displayNone);
-    }
-    // show home page function
-    const showLikePage = () => {
-        setHomeClass(displayNone)
-        setLikeClass("");
-        setFavouriteClass(displayNone);
-    }
-    // show home page function
-    const showFavouritePage = () => {
-        setHomeClass(displayNone)
-        setLikeClass(displayNone);
-        setFavouriteClass("");
-    }
-
-    // textarea changed
-    const [textareaContent, setTextareaContent] = useState("")
-    const textareaChanging = (e) => {
-        setTextareaContent(e.target.value);
-    }
-
-    // comment clicked
-    const addComment = () => {
-        console.log(comments);
-        if (textareaContent.trim() == "") { }
-        else {
-            const add = [textareaContent.trim(), ...comments];
-            setComments(add);
-            console.log(comments)
-            setTextareaContent("")
-        }
-    }
+    const showHomePage = () => { setHomeClass(""); setLikeClass(displayNone); setFavouriteClass(displayNone) }
+    // show like page function
+    const showLikePage = () => { setHomeClass(displayNone); setLikeClass(""); setFavouriteClass(displayNone) }
+    // show favourite page function
+    const showFavouritePage = () => { setHomeClass(displayNone); setLikeClass(displayNone); setFavouriteClass("") }
 
     return (
         <div id="completeHomePage">
@@ -127,13 +84,7 @@ const Home = ({ setSignupCss, setHomeCss }) => {
                 <div id="likedFood">{likeFoods}</div>
             </div>
 
-            <Comment textareaContent={textareaContent} textareaChanging={textareaChanging} addComment={addComment} />
-
-            <div id="commentsText">Our Customer Thoughts About US</div>
-
-            <div id="comments" className="">
-                {showComments}
-            </div>
+            <Comment />
         </div>
     )
 }
