@@ -1,5 +1,4 @@
-#doComment{
-    /* background-color: black; */
+#doComment {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,15 +6,14 @@
     padding-top: 30px;
 }
 
-#letsComment{
+#letsComment {
     color: white;
     font-size: 35px;
     font-weight: 500;
     text-align: center;
-    /* margin: 20px 0px 0px; */
 }
 
-.commentText{
+.commentText {
     border-radius: 2px;
     box-sizing: border-box;
     padding: 6px 10px;
@@ -26,8 +24,7 @@
 }
 
 
-#commentsText{
-    /* display: flex; */
+#commentsText {
     text-align: center;
     margin-top: 30px;
     font-size: 30px;
@@ -35,12 +32,12 @@
     color: rgb(255, 255, 255);
 }
 
-#textarea{
+#textarea {
     width: 600px;
     margin: auto;
 }
 
-.itemComment{
+.itemComment {
     width: 200px;
     height: 30px;
     margin: auto;

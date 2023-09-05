@@ -21,11 +21,10 @@
     padding: 20px;
     border-radius: 5px;
     background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: 2px 2px 20px 0px rgba(105 105 105 / 70%);
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* row-gap: 40px; */
     width: 340px;
     box-sizing: border-box;
 }

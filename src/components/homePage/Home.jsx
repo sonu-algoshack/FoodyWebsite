@@ -10,7 +10,7 @@ import Comment from "./comment";
 
 export let foodDetails = Array.from(foodData);
 
-const Home = ({setSignupCss, setHomeCss}) => {
+const Home = ({ setSignupCss, setHomeCss }) => {
     // Like and dislike food items
     const [likeFoodDetails, setLikeFoodDetails] = useState([]);
     // adding like
@@ -100,7 +100,7 @@ const Home = ({setSignupCss, setHomeCss}) => {
     // comment clicked
     const addComment = () => {
         console.log(comments);
-        if (textareaContent.trim() == ""){}
+        if (textareaContent.trim() == "") { }
         else {
             const add = [textareaContent.trim(), ...comments];
             setComments(add);
@@ -115,7 +115,6 @@ const Home = ({setSignupCss, setHomeCss}) => {
             <div id="homePage" className={homeClass}>
                 <div className="pageWelcomeMsg" >Hello welcome to home page</div>
                 <div id="foodItems">{foods}</div>
-                {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. A, asperiores. Aspernatur dolore nemo nobis sit mollitia corporis, quisquam quam sint animi deleniti unde, error iste a? Sed nesciunt assumenda mollitia delectus neque expedita alias. A maxime alias suscipit optio dicta non laboriosam numquam quibusdam quae modi velit rerum sapiente nihil illum, aliquam quidem nobis natus vel necessitatibus, eos, obcaecati sit soluta. Natus labore. */}
             </div>
 
             <div id="favouritePage" className={favouriteClass}>
@@ -128,7 +127,7 @@ const Home = ({setSignupCss, setHomeCss}) => {
                 <div id="likedFood">{likeFoods}</div>
             </div>
 
-            <div id="doComment"><Comment textareaContent={textareaContent} textareaChanging={textareaChanging} addComment={addComment} /></div>
+            <Comment textareaContent={textareaContent} textareaChanging={textareaChanging} addComment={addComment} />
 
             <div id="commentsText">Our Customer Thoughts About US</div>
 
