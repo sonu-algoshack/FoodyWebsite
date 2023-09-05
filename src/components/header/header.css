@@ -14,9 +14,10 @@
 }
 
 #header {
-    padding: 7px 0px 10px 0px;
+    padding: 7px 15px 10px 15px;
     min-width: 98vw;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 #logo {
@@ -30,17 +31,6 @@
     color: white;
 }
 
-/* #logout {
-    border: none;
-    font-weight: 500;
-    color: white;
-    cursor: pointer;
-    background-color: red;
-    padding: 8px 15px 10px;
-    border-radius: 6px;
-    font-size: 16px;
-} */
-
 .headerTexts {
     cursor: pointer;
 }
@@ -52,4 +42,17 @@
 #userEmail {
     color: red;
     font-size: 20px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #signupDetails {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    #logo {
+        display: none;
+    }
 }
