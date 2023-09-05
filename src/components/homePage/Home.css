@@ -1,0 +1,43 @@
+.displayNone{
+    display: none;
+}
+
+.pageWelcomeMsg{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#commentsText{
+    /* display: flex; */
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+}
+
+#comments{
+    display: flex;
+    gap: 21px;
+    overflow: scroll;
+    overflow-y: hidden;
+    margin: 30px 40px;
+}
+#comments::-webkit-scrollbar {
+    display: none;
+}
+.commentParent{
+    padding: 15px;
+    background-color: rgb(57, 210, 57);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.everySingleComment{
+    width: 350px;
+    height: 128px;
+    font-size: 17.8px;
+    text-align: justify;
+    overflow: hidden;
+}

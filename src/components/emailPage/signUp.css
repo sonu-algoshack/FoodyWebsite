@@ -1,0 +1,97 @@
+.displayNone{
+    display: none;
+}
+
+#emailUnderSendOtpBtn{
+    color: red;
+    width: 300px;
+    text-align: left;
+}
+
+#completeSignupPage {
+    width: 99vw;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+#signupPage {
+    padding: 20px 30px 30px;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgb(0 0 0 / 30%) 10px 10px, rgb(0 0 0 / 20%) 15px 15px, rgb(0 0 0 / 10%) 20px 20px, rgb(0 0 0 / 5%) 25px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#welcomeMsg {
+    font-size: 35px;
+    font-weight: 600;
+    color: red;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.singupInputs {
+    padding-left: 10px;
+    font-size: 17px;
+    height: 35px;
+    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1.4px solid black;
+    background-color: beige;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: default;
+}
+
+#otpSendedMsg {
+    width: 300px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.button {
+    background-color: rgb(57, 210, 57);
+    color: white;
+    padding: 6px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#otpSendedMsg, .verified {
+    color: rgb(38, 181, 38);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: default;
+}
+
+#emailId {
+    color: red;
+    padding: 0px 4px;
+}
+
+#email{
+    border: none;
+}

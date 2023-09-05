@@ -1,0 +1,68 @@
+.foodImage {
+    width: 300px;
+    aspect-ratio: 635/337;
+}
+
+#foodItems, #favouriteFood, #likedFood {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 30px;
+}
+
+#favouriteFood .itemLikeFavourite, #favouriteFood .commentText, #favouriteFood .itemComment,
+#likedFood .itemLikeFavourite, #likedFood .commentText, #likedFood .itemComment{
+    display: none;
+}
+
+.foodItem {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* row-gap: 40px; */
+    width: 340px;
+    box-sizing: border-box;
+}
+
+.foodImage {
+    border-radius: 6px;
+}
+
+.foodNamePrice {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.itemLikeFavourite{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons{
+    background-color: rgb(57, 210, 57);
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.commentText {
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    overflow-y: scroll;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+.commentText::-webkit-scrollbar {
+    width: 0px;
+}

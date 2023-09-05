@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "dishName": "KFC",
+        "price": "₹200",
+        "avatar": "https://b.zmtcdn.com/data/pictures/chains/4/50574/83e71b55d4a73c3f0e1a5a353f90eb13_o2_featured_v2.jpg"
+    },
+    {
+        "id": 2,
+        "dishName": "Domino's Pizza",
+        "price": "₹300",
+        "avatar": "https://b.zmtcdn.com/data/pictures/chains/2/50382/e8cf1c58f2bb217f3d85ff50b7fe39a3_o2_featured_v2.jpg?output-format=webp"
+    },
+    {
+        "id": 3,
+        "dishName": "Krishna Vaibhava",
+        "price": "₹150",
+        "avatar": "https://b.zmtcdn.com/data/pictures/5/19422875/14bb38a6e3fc9e743d4996aa0ef02993_o2_featured_v2.jpg"
+    },
+    {
+        "id": 4,
+        "dishName": "Chinese Wok",
+        "price": "₹100",
+        "avatar": "https://b.zmtcdn.com/data/pictures/chains/3/19715673/8be9fb314f005ee33d42a82811a294f2_o2_featured_v2.jpg"
+    },
+    {
+        "id": 5,
+        "dishName": "Kataria's",
+        "price": "₹150",
+        "avatar": "https://b.zmtcdn.com/data/pictures/2/60472/53ab5aad60abdd70ded5feab96cb6676_o2_featured_v2.jpg"
+    },
+    {
+        "id": 6,
+        "dishName": "WarmOven Cake & Desserts",
+        "price": "₹250",
+        "avatar": "https://b.zmtcdn.com/data/pictures/chains/5/57215/16a330d4e01d782838768f12dfd54882_o2_featured_v2.jpg"
+    },
+
+    {
+        "id": 7,
+        "dishName": "KFC",
+        "price": "₹200",
+        "avatar": "https://b.zmtcdn.com/data/pictures/chains/4/50574/83e71b55d4a73c3f0e1a5a353f90eb13_o2_featured_v2.jpg"
+    },
+    {
+        "id": 8,
+        "dishName": "Domino's Pizza",
+        "price": "₹300",
+        "avatar": "https://b.zmtcdn.com/data/pictures/chains/2/50382/e8cf1c58f2bb217f3d85ff50b7fe39a3_o2_featured_v2.jpg?output-format=webp"
+    },
+    {
+        "id": 9,
+        "dishName": "Krishna Vaibhava",
+        "price": "₹150",
+        "avatar": "https://b.zmtcdn.com/data/pictures/5/19422875/14bb38a6e3fc9e743d4996aa0ef02993_o2_featured_v2.jpg"
+    },
+    {
+        "id": 10,
+        "dishName": "Chinese Wok",
+        "price": "₹100",
+        "avatar": "https://b.zmtcdn.com/data/pictures/chains/3/19715673/8be9fb314f005ee33d42a82811a294f2_o2_featured_v2.jpg"
+    },
+    {
+        "id": 11,
+        "dishName": "Kataria's",
+        "price": "₹150",
+        "avatar": "https://b.zmtcdn.com/data/pictures/2/60472/53ab5aad60abdd70ded5feab96cb6676_o2_featured_v2.jpg"
+    },
+    {
+        "id": 6,
+        "dishName": "WarmOven Cake & Desserts",
+        "price": "₹250",
+        "avatar": "https://b.zmtcdn.com/data/pictures/chains/5/57215/16a330d4e01d782838768f12dfd54882_o2_featured_v2.jpg"
+    }
+]
