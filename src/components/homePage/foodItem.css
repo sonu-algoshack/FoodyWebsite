@@ -1,6 +1,7 @@
 .foodImage {
     width: 300px;
     aspect-ratio: 635/337;
+    border-radius: 4px;
 }
 
 #foodItems, #favouriteFood, #likedFood {
@@ -18,7 +19,8 @@
 
 .foodItem {
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
+    background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
@@ -26,10 +28,6 @@
     /* row-gap: 40px; */
     width: 340px;
     box-sizing: border-box;
-}
-
-.foodImage {
-    border-radius: 6px;
 }
 
 .foodNamePrice {
@@ -54,15 +52,6 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.commentText {
-    border-radius: 2px;
-    box-sizing: border-box;
-    padding: 6px 10px;
-    overflow-y: scroll;
-    text-align: justify;
-    border-radius: 5px;
-}
-
 .commentText::-webkit-scrollbar {
     width: 0px;
 }

@@ -1,3 +1,10 @@
+#homePage{
+}
+
+#completeHomePage{
+    background-color: black;
+}
+
 .displayNone{
     display: none;
 }
@@ -9,21 +16,14 @@
     margin: 20px 0px;
 }
 
-#commentsText{
-    /* display: flex; */
-    text-align: center;
-    margin-top: 30px;
-    font-size: 30px;
-    font-weight: 500;
-    color: red;
-}
 
 #comments{
     display: flex;
     gap: 21px;
     overflow: scroll;
     overflow-y: hidden;
-    margin: 30px 40px;
+    margin: 0px 40px;
+    padding: 30px 0px 10px;
 }
 #comments::-webkit-scrollbar {
     display: none;

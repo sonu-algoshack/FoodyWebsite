@@ -6,6 +6,7 @@ import 'aos/dist/aos.css'
 import foodData from "../assets/foodDetails.json";
 import FoodItem from "./foodItem";
 import Header from "../header/header";
+import Comment from "./comment";
 
 export let foodDetails = Array.from(foodData);
 
@@ -50,7 +51,7 @@ const Home = ({setSignupCss, setHomeCss}) => {
     // Complete Menu
     const foods = foodDetails.map((foodDetail) => {
         return (
-            <FoodItem foodDetail={foodDetail} makeFavourite={makeFavourite} removeFavourite={removeFavourite} makeLike={makeLike} removeLike={removeLike} comments={comments} setComments={setComments} />
+            <FoodItem foodDetail={foodDetail} makeFavourite={makeFavourite} removeFavourite={removeFavourite} makeLike={makeLike} removeLike={removeLike} />
         )
     })
     // Only Favourite Foods
@@ -90,8 +91,26 @@ const Home = ({setSignupCss, setHomeCss}) => {
         setFavouriteClass("");
     }
 
+    // textarea changed
+    const [textareaContent, setTextareaContent] = useState("")
+    const textareaChanging = (e) => {
+        setTextareaContent(e.target.value);
+    }
+
+    // comment clicked
+    const addComment = () => {
+        console.log(comments);
+        if (textareaContent.trim() == ""){}
+        else {
+            const add = [textareaContent.trim(), ...comments];
+            setComments(add);
+            console.log(comments)
+            setTextareaContent("")
+        }
+    }
+
     return (
-        <>
+        <div id="completeHomePage">
             <Header showHomePage={showHomePage} showLikePage={showLikePage} showFavouritePage={showFavouritePage} setHomeCss={setHomeCss} setSignupCss={setSignupCss} />
             <div id="homePage" className={homeClass}>
                 <div className="pageWelcomeMsg" >Hello welcome to home page</div>
@@ -109,11 +128,14 @@ const Home = ({setSignupCss, setHomeCss}) => {
                 <div id="likedFood">{likeFoods}</div>
             </div>
 
-            <div id="commentsText">Comments</div>
+            <div id="doComment"><Comment textareaContent={textareaContent} textareaChanging={textareaChanging} addComment={addComment} /></div>
+
+            <div id="commentsText">Our Customer Thoughts About US</div>
+
             <div id="comments" className="">
                 {showComments}
             </div>
-        </>
+        </div>
     )
 }
 

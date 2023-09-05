@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./foodItem.css";
 
-const FoodItem = ({ foodDetail, makeFavourite, removeFavourite, makeLike, removeLike, comments, setComments }) => {
+const FoodItem = ({foodDetail, makeFavourite, removeFavourite, makeLike, removeLike}) => {
     
     // like clicked
     const [like, setLike] = useState("Like");
@@ -29,24 +29,6 @@ const FoodItem = ({ foodDetail, makeFavourite, removeFavourite, makeLike, remove
         }
     }
 
-    // textarea changed
-    const [textareaContent, setTextareaContent] = useState("")
-    const textareaChanging = (e) => {
-        setTextareaContent(e.target.value);
-    }
-
-    // comment clicked
-    const addComment = () => {
-        console.log(comments);
-        if (textareaContent.trim() == ""){}
-        else {
-            const add = [textareaContent.trim(), ...comments];
-            setComments(add);
-            console.log(comments)
-            setTextareaContent("")
-        }
-    }
-
     const { id, dishName, price, avatar } = foodDetail;
     return (
         <div className="foodItem">
@@ -59,8 +41,7 @@ const FoodItem = ({ foodDetail, makeFavourite, removeFavourite, makeLike, remove
                 <div className="itemLike buttons" onClick={likeClicked}>{like}</div>
                 <div className="itemFavourite buttons" onClick={favouriteClicked}>{fav}</div>
             </div>
-            <textarea name="" id="" cols="20" rows="3" className="commentText" value={textareaContent} onChange={textareaChanging}></textarea>
-            <div className="itemComment buttons" onClick={addComment}>Comment</div>
+            
         </div>
     )
 }
